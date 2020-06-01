@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['username']))
-header('Location: http://login.php');
+header('Location: http://indite.herkuapp.com/login.php');
 ?>
 <?php
 $username=$_SESSION['username'];
