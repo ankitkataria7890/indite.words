@@ -3,8 +3,7 @@ header("Cache-Control: no cache");
 session_cache_limiter("private");
 session_cache_expire(0);
 session_start();
-session_cache_limiter("private");
-session_cache_expire(0);
+
 $username=$_SESSION['username'];
 /*$i=0;
 while($i<1){
