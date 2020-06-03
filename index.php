@@ -180,7 +180,6 @@ for($i=1;$i<=$n;$i++)
 {$res=mysqli_fetch_array($t);
   $user=$res['username'];
   $user_date=$res['postdate'];
-  $user_postdate=$res['savedate'];
   $m="select * from following where username='$username' && followingname='$user'";
   $mc=mysqli_query($con,$m);
   $mn=mysqli_num_rows($mc);
@@ -193,8 +192,8 @@ for($i=1;$i<=$n;$i++)
 <div class="grid" id ="outside">
 <div style="padding-bottom:10px;">
 &nbsp;&nbsp;&nbsp;&nbsp; <button form="users" type="submit" name="myCountry" value="<?php echo $user; ?>" style="border:0px solid white;color:blue;"><b><?php echo $user; ?></b></button>
-<span style="float:right; padding-right:20px;"><?php echo $user_postdate; ?></span></div>
-<div id="headerr" style=" background: <?php echo $user_res['bgcolor']; ?>;color:<?php echo $user_res['fontcolor']; ?>;font-family:<?php echo $user_res['fontstyle']; ?>;font-size:<?php echo $user_res['text_size']; ?>;">
+<span style="float:right; padding-right:20px;"><?php echo $user_date; ?></span></div>
+<div id="headerr" style=" background-color: <?php echo $user_res['bgcolor']; ?>;color:<?php echo $user_res['fontcolor']; ?>;font-family:<?php echo $user_res['fontstyle']; ?>;font-size:<?php echo $user_res['text_size']; ?>;">
 <pre><?php echo $user_res['textarea']; ?> </pre>
 </div>
 <div id="like" ><i class="material-icons ">whatshot</i><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
@@ -212,7 +211,7 @@ for($i=1;$i<=$n;$i++)
 
 
 </div>
-<div class="footer" id="foo" style="display:none;" >
+<div class="footer" id="foo" >
 <ul style="list-style:none">
 <li> <a href="aboutus.php">About Us</a></li>
 <li> <a href="faq.php">FAQs</a></li>
