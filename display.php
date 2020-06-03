@@ -3,11 +3,11 @@ header("Cache-Control: no cache");
 session_cache_limiter("private_no_expire");
 session_start();
 $username=$_SESSION['username'];
-$i=0;
+/*$i=0;
 while($i!=1){
  location.reload(true);
  $i++;
-}
+}*/
 $host='sql12.freesqldatabase.com';
 $dbuser='sql12345161';
 $dbpassword='3dqYuAVkkt';
