@@ -19,6 +19,6 @@ $i=mysqli_query($con,$q);
 }
 mysqli_close($con);
 echo"<script>
-replace('https://indite.herokuapp.com/display.php?');
+location.replace('https://indite.herokuapp.com/display.php?');
 </script>;"
 ?>
