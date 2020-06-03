@@ -3,7 +3,12 @@ header("Cache-Control: no cache");
 session_cache_limiter("private_no_expire");
 session_start();
 $username=$_SESSION['username'];
-$con= mysqli_connect('localhost','root','','dbsignup');
+$username=$_SESSION['username'];
+$host='sql12.freesqldatabase.com';
+$dbuser='sql12345161';
+$dbpassword='3dqYuAVkkt';
+$dbname='sql12345161';
+$con=mysqli_connect($host,$dbuser,$dbpassword,$dbname);
 if(!$con){
 die('not connected');}
 $s="select * from content where username='$username'";
