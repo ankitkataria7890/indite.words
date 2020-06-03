@@ -5,7 +5,12 @@ header('Location: http://indite.herokuapp.com/login.php');
 ?>
 <?php
 $username=$_SESSION['username'];
-$con= mysqli_connect('localhost','root','','dbsignup');
+$username=$_SESSION['username'];
+$host='sql12.freesqldatabase.com';
+$dbuser='sql12345161';
+$dbpassword='3dqYuAVkkt';
+$dbname='sql12345161';
+$con=mysqli_connect($host,$dbuser,$dbpassword,$dbname);
 if(!$con){
 die('not connected');}
 $s="select * from post ORDER BY id desc";
@@ -209,9 +214,9 @@ for($i=1;$i<=$n;$i++)
 </div>
 <div class="footer" id="foo" style="display:none;" >
 <ul style="list-style:none">
-<li> <a href="#">About Us</a></li>
-<li> <a href="#">FAQs</a></li>
-<li> <a href="#">Blog</a></li>
+<li> <a href="aboutus.php">About Us</a></li>
+<li> <a href="faq.php">FAQs</a></li>
+<li> <a href="blog.php">Blog</a></li>
 <li style="float:right"> <a href="#">Contact</a></li>
 <li style="float:right"> <a href="suggestion.php">Suggestion</a></li>
 </ul>
