@@ -172,7 +172,7 @@ function footer(){
 <button class="form-closeup" id="close" style="cursor:pointer" onclick="document.getElementById('myForm').style.display='none';document.getElementById('close').style.display='none';"><b>Close</b></button>
 <form id="users" action="usersaccount.php" method="post"></form>
 </div>
-<div class="row" ">
+<div class="row">
 <div class="column middle">
 <div class="grid-container">
 <?php 
