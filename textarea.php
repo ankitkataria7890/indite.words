@@ -9,7 +9,6 @@ $fc=$_POST['fontcolor'];
 $bc=$_POST['bgcolor'];
 if($save){
 $textarea=$_POST['text'];
-$username=$_SESSION['username'];
 $host='sql12.freesqldatabase.com';
 $dbuser='sql12345161';
 $dbpassword='3dqYuAVkkt';
@@ -24,7 +23,9 @@ $num=mysqli_num_rows($h);
     if($num==1){
 $q="INSERT INTO content". "(textarea,username,date,fontstyle,text_size,fontcolor,bgcolor)". "VALUES('$textarea','$username',NOW(),'$fs','$ts','$fc','$bc')";
 $i=mysqli_query($con,$q);
-echo"<script> window.history.back(1);
+echo"<script>
+window.location.href='http://indite.herokuapp.com/write.php';
+window.location.href = window.location.href;
 </script>";}
 
 
@@ -33,6 +34,7 @@ echo"<script> window.history.back(1);
   echo "<script>
              alert('Account Not Exist \\nPlease SIGNUP'); 
                window.location.href='http://indite.herokuapp.com/signu.php';
+               window.location.href = window.location.href;
      </script>";}
 mysqli_close($con);
 }
