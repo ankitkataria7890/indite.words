@@ -232,9 +232,10 @@ width:100%;}
 }
 
 .vernav{
-display : block;
+display:block;
 padding:5px;
-float:down;}
+float:down;
+}
 
 .example input[input=text]
 {
