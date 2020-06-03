@@ -135,7 +135,7 @@ height:100%;
 <span class="edit"><a href="editaccount.php"> &nbsp;&nbsp;Edit</a></span><br>
 
 <div id="header"><center>
-<span style="font-size:40px;float:left;margin-left:40px;color:rgba(0,0,0,1);font-family: 'arial', serif;"><b><?php echo $username;?></b></span><span style="float:right;margin:30px 0 0px 40px;">04-07-1999</span>
+<span style="font-size:40px;float:left;margin-left:40px;color:rgba(0,0,0,1);font-family: 'arial', serif;"><b><?php echo $username;?></b></span><span style="float:right;margin:30px 0 0px 40px;"></span>
 <div id="outbox">
 <img id="profilepic" src="<?php echo 'image/'.$row['filename'];?>" ><br><br>
 </div>
@@ -154,7 +154,7 @@ height:100%;
 
 <?php echo $follower; ?> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Following  <?php echo $following; ?> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Post <?php echo $pn; ?>
 <br><br><br>
-<div id="desc" >My name is <b>If<?php $name;?> </b>!<?php echo $desc;?></div><br><br>
+<div id="desc" >My name is <b><?php echo $name;?> </b>!<?php echo $desc;?></div><br><br>
 
 <h1> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skills & Hobbies:</h1>
 <?php echo $hobby;?><br>
