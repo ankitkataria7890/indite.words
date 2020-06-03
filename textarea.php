@@ -24,7 +24,7 @@ $num=mysqli_num_rows($h);
 $q="INSERT INTO content". "(textarea,username,date,fontstyle,text_size,fontcolor,bgcolor)". "VALUES('$textarea','$username',NOW(),'$fs','$ts','$fc','$bc')";
 $i=mysqli_query($con,$q);
 echo"<script>
-window.location.href='write.php';
+location.replace('https://indite.herokuapp.com/write.php');
 </script>";}
 
 
