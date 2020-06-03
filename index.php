@@ -5,7 +5,6 @@ header('Location: http://indite.herokuapp.com/login.php');
 ?>
 <?php
 $username=$_SESSION['username'];
-$username=$_SESSION['username'];
 $host='sql12.freesqldatabase.com';
 $dbuser='sql12345161';
 $dbpassword='3dqYuAVkkt';
