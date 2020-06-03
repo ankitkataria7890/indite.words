@@ -5,7 +5,10 @@ session_start();
 $username=$_SESSION['username'];
 $i=0;
 while($i<1){
- location.reload(true);
+ 
+  echo "<script>
+            location.reload(true);          
+     </script>";
  $i++;
 }
 $host='sql12.freesqldatabase.com';
