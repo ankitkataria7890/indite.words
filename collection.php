@@ -11,6 +11,8 @@ $con=mysqli_connect($host,$dbuser,$dbpassword,$dbname);
 if(!$con){
 die('not connected');}
 mysqli_close($con);
-header('Location: http://indite.herokuapp.com/display.php');
+echo "<script>  
+  window.location.href='display.php';   
+  </script>";
 }
 ?>
