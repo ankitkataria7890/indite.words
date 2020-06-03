@@ -71,7 +71,7 @@ Terms and Conditions for Throwords
 <p><strong>Third-party Social Media Service</strong> means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.</p>
 </li>
 <li>
-<p><strong>Website</strong> refers to throwords, accessible from <a href="http://www.throwords.com" rel="external nofollow noopener" target="_blank">http://indite.herokuapp.com</a></p>
+<p><strong>Website</strong> refers to throwords, accessible from <a href="indite.herokuapp.com" rel="external nofollow noopener" target="_blank">http://www.indite.com</a></p>
 </li>
 <li>
 <p><strong>You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</p>
@@ -120,13 +120,13 @@ You agree that the original English text shall prevail in the case of a dispute.
 <h1>Contact Us</h1>
 <p>If you have any questions about these Terms and Conditions, You can contact us:</p>
 <ul>
-<li>By visiting this page on our website: <a href="http://indite.herokuapp.com/suggestion" rel="external nofollow noopener" target="_blank">http://www.throwords.com/suggestion</a></li>
+<li>By visiting this page on our website: <a href="indite.herokuapp.com/suggestion.php" rel="external nofollow noopener" target="_blank">http://www.indite.com/suggestion</a></li>
 </ul>
 <div class="footer">
 <ul style="list-style:none">
-<li> <a href="#">About Us</a></li>
-<li> <a href="#">FAQs</a></li>
-<li> <a href="#">Blog</a></li>
+<li> <a href="aboutus.php">About Us</a></li>
+<li> <a href="faq.php">FAQs</a></li>
+<li> <a href="blog.php">Blog</a></li>
 <li style="float:right"> <a href="#">Contact</a></li>
 <li style="float:right"> <a href="suggestion.php">Suggestion</a></li>
 </ul>
