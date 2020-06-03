@@ -13,9 +13,10 @@ $q="insert into  registration (username,password,fullname,recoverpassword) value
 mysqli_query($con,$q);
 mysqli_close($con);
  echo "<script>
-window.location.href='login.php';
-  </script>"
-     }
+             alert('Account successful registered');  
+  window.history.back(2);   
+  </script>";
+}
  echo "<script>
              alert('Username OR Password Exist//n Fill Another Credentials');  
   window.history.back();   
