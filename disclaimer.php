@@ -56,7 +56,7 @@ The following definitions shall have the same meaning regardless of whether they
 <p><strong>You</strong> means the individual accessing the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</p>
 </li>
 <li>
-<p><strong>Website</strong> refers to <a href="http://www.indite.herokuapp.com" rel="external nofollow noopener" target="_blank" >http://www.throwords.com</a> (throwords).</p>
+<p><strong>Website</strong> refers to <a href="indite.herokuapp.com" rel="external nofollow noopener" target="_blank" >http://www.indite.com</a> (throwords).</p>
 </li>
 <li>
 <p><strong>Service</strong> refers to the Website.</p>
@@ -89,14 +89,14 @@ The following definitions shall have the same meaning regardless of whether they
 <h1>Contact Us</h1>
 <p>If you have any questions about this Disclaimer, You can contact Us:</p>
 <ul>
-<li>By visiting this page on our website: <a href="http://indite.herokuapp.com/suggestion" rel="external nofollow noopener" target="_blank">http://www.throwords.com/suggestion</a></li>
+<li>By visiting this page on our website: <a href="indite.herokuapp.com/suggestion.php" rel="external nofollow noopener" target="_blank">http://www.indite.com/suggestion</a></li>
 </ul></div>
 <div class="footer">
 <ul style="list-style:none">
 <li> <a href="#">About Us</a></li>
 <li> <a href="#">FAQs</a></li>
 <li> <a href="#">Blog</a></li>
-<li style="float:right"> <a href="#">Contact</a></li>
+<li style="float:right"> <a href="contact.php">Contact</a></li>
 <li style="float:right"> <a href="suggestion.php">Suggestion</a></li>
 </ul>
 <br>
