@@ -12,9 +12,9 @@ $con=mysqli_connect($host,$dbuser,$dbpassword,$dbname);
 
 if(!$con){
 die('not connected');}
-mysqli_close($con);*/
-echo "<script>  
-  location.replace('https://indite.herokuapp.com/display.php');   
-  </script>";
+mysqli_close($con);
+echo "<script>  */
+  header('Location: https://indite.herokuapp.com/display.php');   
+//  </script>";
 }
 ?>
