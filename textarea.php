@@ -24,7 +24,7 @@ $num=mysqli_num_rows($h);
 $q="INSERT INTO content". "(textarea,username,date,fontstyle,text_size,fontcolor,bgcolor)". "VALUES('$textarea','$username',NOW(),'$fs','$ts','$fc','$bc')";
 $i=mysqli_query($con,$q);
 echo"<script>
-location.replace('https://indite.herokuapp.com/write.php');
+location.replace('https://indite.herokuapp.com/write.php?');
 </script>";}
 
 
@@ -32,7 +32,7 @@ location.replace('https://indite.herokuapp.com/write.php');
 
   echo "<script>
              alert('Account Not Exist \\nPlease SIGNUP'); 
-              location.replace('https://indite.herokuapp.com/signu.php');
+              location.replace('https://indite.herokuapp.com/signu.php?');
 
      </script>";}
 mysqli_close($con);
