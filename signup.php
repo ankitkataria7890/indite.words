@@ -14,7 +14,7 @@ mysqli_query($con,$q);
 mysqli_close($con);
  echo "<script>
              alert('Account successful registered');  
-  window.history.back(2);   
+  window.location.href='login.php';   
   </script>";
 }
  echo "<script>
