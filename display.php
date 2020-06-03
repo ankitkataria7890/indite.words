@@ -3,14 +3,14 @@ header("Cache-Control: no cache");
 session_cache_limiter("private_no_expire");
 session_start();
 $username=$_SESSION['username'];
-$i=0;
+/*$i=0;
 while($i<1){
  
   echo "<script>
             location.reload(true);          
      </script>";
  $i++;
-}
+}*/
 $host='sql12.freesqldatabase.com';
 $dbuser='sql12345161';
 $dbpassword='3dqYuAVkkt';
@@ -76,7 +76,7 @@ cursor:pointer;
     $color=$res['fontcolor'];
     $bg=$res['bgcolor'];
     ?>
-  <form id="content"  action="yourcontent.php" style="display:none" method="post" ></form>
+  <form id="content"  action="yourcontent.php?" style="display:none" method="post" ></form>
     <div style="color:<?php echo $color;?>;background-color:<?php echo $bg;?>">
   <dfn title="Tap to View"><input type="submit" style="background-color:<?php echo $bg;?>" id="consubmit" form="content"  name="content"  value="<?php echo $date;?>"></dfn><br><?php echo $text; ?>
 
