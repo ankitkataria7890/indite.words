@@ -32,7 +32,8 @@ location.replace('https://indite.herokuapp.com/write.php');
 
   echo "<script>
              alert('Account Not Exist \\nPlease SIGNUP'); 
-               window.location.href='signu.php';
+              location.replace('https://indite.herokuapp.com/signu.php');
+
      </script>";}
 mysqli_close($con);
 }
