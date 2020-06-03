@@ -18,5 +18,5 @@ $q="DELETE FROM content where username='$username'&& date='$date'";
 $i=mysqli_query($con,$q);
 }
 mysqli_close($con);
-location.replace('http://indite.herokuapp.com/display.php');
+header('Location: https://indite.herokuapp.com/display.php');
 ?>
