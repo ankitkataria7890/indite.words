@@ -14,16 +14,18 @@ $h=mysqli_query($con,$r);
 $num=mysqli_num_rows($h);
 if($num==0){
 $q="insert into  registration (username,password,fullname,recoverpassword) values ('$username','$password','$fullname','$recoverpassword')";
-mysqli_query($con,$q);
+$z=mysqli_query($con,$q);
 mysqli_close($con);
+ if($z){
  echo "<script>
              alert('Account successful registered');  
-  window.location.href='login.php';   
+  location.replace('https://indite.herokuapp.com/login.php');   
   </script>";
+}
 }
  echo "<script>
              alert('Username OR Password Exist//n Fill Another Credentials');  
-  window.history.back();   
+ location.replace('https://indite.herokuapp.com/signu.php'); 
   </script>";
 
 mysqli_close($con);
