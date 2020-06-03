@@ -64,7 +64,7 @@ The following definitions shall have the same meaning regardless of whether they
 <p><strong>Account</strong> means a unique account created for You to access our Service or parts of our Service.</p>
 </li>
 <li>
-<p><strong>Website</strong> refers to throwords, accessible from <a href="http://indite.herokuapp.com" rel="external nofollow noopener" target="_blank">http://throwords.com</a></p>
+<p><strong>Website</strong> refers to throwords, accessible from <a href="indite.herokuapp.com" rel="external nofollow noopener" target="_blank">http://www.indite.com</a></p>
 </li>
 <li>
 <p><strong>Service</strong> refers to the Website.</p>
@@ -195,13 +195,13 @@ The following definitions shall have the same meaning regardless of whether they
 <h1>Contact Us</h1>
 <p>If you have any questions about this Privacy Policy, You can contact us:</p>
 <ul>
-<li>By visiting this page on our website: <a href="http://indite.herokuapp.com/suggestion" rel="external nofollow noopener" target="_blank">http://www.throwords.com/suggestion</a></li>
+<li>By visiting this page on our website: <a href="indite.herokuapp.com/suggestion.php" rel="external nofollow noopener" target="_blank">http://www.indite.com/suggestion</a></li>
 </ul>
 <div class="footer">
 <ul style="list-style:none">
-<li> <a href="#">About Us</a></li>
-<li> <a href="#">FAQs</a></li>
-<li> <a href="#">Blog</a></li>
+<li> <a href="aboutus.php">About Us</a></li>
+<li> <a href="faq.php">FAQs</a></li>
+<li> <a href="blog.php">Blog</a></li>
 <li style="float:right"> <a href="#">Contact</a></li>
 <li style="float:right"> <a href="suggestion.php">Suggestion</a></li>
 </ul>
