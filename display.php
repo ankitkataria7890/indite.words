@@ -26,7 +26,7 @@ $n=mysqli_num_rows($t);
 if($n==0){
  echo "<script>
              alert('Save First Something'); 
-              
+              location.replace('write.php?');
      </script>";}?>
 <!DOCTYPE html>
 <html>
