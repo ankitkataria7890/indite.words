@@ -12,8 +12,9 @@ if($num==0){
 $q="insert into  registration (username,password,fullname,recoverpassword) values ('$username','$password','$fullname','$recoverpassword')";
 mysqli_query($con,$q);
 mysqli_close($con);
+ echo "<script>
 window.location.href='login.php';
- 
+  </script>"
      }
  echo "<script>
              alert('Username OR Password Exist//n Fill Another Credentials');  
