@@ -5,7 +5,12 @@
 <?php
 session_start();
 $username=$_SESSION['username'];
-$con= mysqli_connect('localhost','root','','dbsignup');
+$username=$_SESSION['username'];
+$host='sql12.freesqldatabase.com';
+$dbuser='sql12345161';
+$dbpassword='3dqYuAVkkt';
+$dbname='sql12345161';
+$con=mysqli_connect($host,$dbuser,$dbpassword,$dbname);
 if(!$con){
 die('not connected');}
 
@@ -128,10 +133,10 @@ if(atindex<1||dotindex>= e.length-2||dotindex-atindex<3)
 </center>
 <br><br><br><div class="footer">
 <ul style="list-style:none">
-<li> <a href="#">About Us</a></li>
-<li> <a href="#">FAQs</a></li>
-<li> <a href="#">Blog</a></li>
-<li style="float:right"> <a href="#">Contact</a></li>
+<li> <a href="aboutus.php">About Us</a></li>
+<li> <a href="faq.php">FAQs</a></li>
+<li> <a href="blog.php">Blog</a></li>
+<li style="float:right"> <a href="contact.php">Contact</a></li>
 <li style="float:right"> <a href="suggestion.php">Suggestion</a></li>
 </ul>
 <br>
@@ -153,9 +158,13 @@ if (isset($_POST['upload'])) {
 	$filename = $_FILES["uploadfile"]["name"]; 
 	$tempname = $_FILES["uploadfile"]["tmp_name"];	 
 		$folder = "image/".$filename; 
-		
-	$db = mysqli_connect("localhost", "root", "", "dbsignup"); 
-
+	$username=$_SESSION['username'];
+$host='sql12.freesqldatabase.com';
+$dbuser='sql12345161';
+$dbpassword='3dqYuAVkkt';
+$dbname='sql12345161';
+$db=mysqli_connect($host,$dbuser,$dbpassword,$dbname);	
+	
         $d = "delete from image where username='$username'"; 
          $dl=mysqli_query($db,$d);
 		// Get all the submitted data from the form 
