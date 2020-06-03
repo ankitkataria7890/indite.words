@@ -17,7 +17,8 @@ $h=mysqli_query($con,$r);
 $num=mysqli_num_rows($h);
 if($num==0){
   echo "<script>
-             alert('Account Not Exist \\nPlease SIGNUP'); 
+             alert('Account Not Exist \\nPlease SIGNUP');
+             location.replace('https://indite.herokuapp.com/signu.php');
               
      </script>";
      
