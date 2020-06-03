@@ -102,7 +102,7 @@ input[type=submit]:hover {
 <body>
 
 <div class="container">
-  <img src="suggestion2.jpg" alt="Notebook" style="width:100%;">
+  <img src="suggestion.jpg" alt="Notebook" style="width:100%;">
 <div class="centered" style="text-align:center;">
 <h1 style="font-family:MingLiU_HKSCS-ExtB"><i>Suggestions...</i></h1>
 <p> <h4 style="font-family:Gabriola;"> Take a sip of coffee and write us with your creative thougts</h4></p>
