@@ -1,7 +1,9 @@
 <?php
 session_start();
 $show = $_POST['display'];
+
 if($show){
+location.reload(true);
 $username=$_SESSION['username'];
 $host='sql12.freesqldatabase.com';
 $dbuser='sql12345161';
@@ -12,7 +14,7 @@ if(!$con){
 die('not connected');}
 mysqli_close($con);
 echo "<script>  
-  window.location.href='display.php';   
+  location.replace('https://indite.herokuapp.com/display.php');   
   </script>";
 }
 ?>
