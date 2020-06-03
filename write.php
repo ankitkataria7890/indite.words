@@ -169,7 +169,7 @@ cursor:pointer;
 </div>
 <div style="margin-top:15px;">
 
-<form   action="collection.php" method="post">
+<form   action="collection.php?" method="post">
 <input style="width: 80px; float: right; cursor:pointer; " type="submit" name="display" value="collection">
 </form>
 <button style="float:right;cursor:pointer; width:80px;" onclick="savecontent()">save</button>
@@ -223,7 +223,7 @@ cursor:pointer;
 </ul>
 </div>
 <div class="column middle">
-<form id="textstyle" action="textarea.php" method="post">
+<form id="textstyle" action="textarea.php?" method="post">
 <textarea  id="transliterateDiv" class="lang" name="text" style="border:0px solid #999999; color:#333333;padding:15px; font-size:10px; min-width:100%;  max-width:100%;min-height:98%;" onclick="set()" required  oninvalid="this.setCustomValidity('Cannot Save Empty TEXT')"
     oninput="this.setCustomValidity('')"  ><?php if(isset($_POST['edit'])){ 
 $date=$_SESSION['savedate'];
