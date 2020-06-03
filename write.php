@@ -236,10 +236,10 @@ echo $res['textarea'];}?></textarea>
 </form></div>
 <div class="footer">
 <ul style="list-style:none">
-<li> <a href="#">About Us</a></li>
-<li> <a href="#">FAQs</a></li>
-<li> <a href="#">Blog</a></li>
-<li style="float:right"> <a href="#">Contact</a></li>
+<li> <a href="aboutus.php">About Us</a></li>
+<li> <a href="faq.php">FAQs</a></li>
+<li> <a href="blog.php">Blog</a></li>
+<li style="float:right"> <a href="contact.php">Contact</a></li>
 <li style="float:right"> <a href="suggestion.php">Suggestion</a></li>
 </ul>
 <br><br>
