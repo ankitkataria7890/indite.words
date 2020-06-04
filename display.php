@@ -1,7 +1,5 @@
 <?php
-header("Cache-Control: no cache");
-session_cache_limiter("private");
-session_cache_expire(0);
+
 session_start();
 
 $username=$_SESSION['username'];
@@ -23,6 +21,7 @@ die('not connected');}
 $s="select * from content where username='$username'";
 $t=mysqli_query($con,$s);
 $n=mysqli_num_rows($t);
+header("Refresh:  300;url='REDIRECTION URI'");
 if($n==0){
  echo "<script>
              alert('Save First Something'); 
@@ -31,7 +30,14 @@ if($n==0){
 <!DOCTYPE html>
 <html>
 <head>
-
+<script>
+ var refresh =$window.localStorage.getItem('refresh');
+ console.log(refresh);
+ if(refresh===null){
+  window.location.reload(true);
+  $window.localStorage.setItem('refresh',"1");
+ }
+ </script>
 <style>
 .grid-container {
   display: grid;
