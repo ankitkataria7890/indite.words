@@ -4,6 +4,7 @@ if(!isset($_SESSION['username']))
  {
 header('Location: http://indite.herokuapp.com/login.php');
 }
+header("Refresh:  300;url='REDIRECTION URI'");
 $username=$_SESSION['username'];
 
 $host='sql12.freesqldatabase.com';
@@ -25,7 +26,16 @@ die('not connected');}
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
   
     <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+   <script>
+ var refresh =$window.localStorage.getItem('refresh');
+ console.log(refresh);
+ if(refresh===null){
+  window.location.reload(true);
+  $window.localStorage.setItem('refresh',"1");
+ }
+ </script>
 <script>
+ 
 
 var myIndex = 0;
 var stop;
