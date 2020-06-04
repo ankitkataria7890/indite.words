@@ -1,7 +1,7 @@
 <?php
-header("Cache-Control: no cache");
-session_cache_limiter("private_no_expire");
+
 session_start();
+header("Refresh:  300;url='REDIRECTION URI'");
 $username=$_SESSION['username'];
 $date=$_POST['content'];
 $_SESSION['savedate']=$date;
