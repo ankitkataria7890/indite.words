@@ -1,6 +1,7 @@
 <?php
 session_start();
 $post=$_POST['user_post'];
+header("Refresh:  300;url='REDIRECTION URI'");
 if($post){
 $username=$_SESSION['username'];
 $date=$_SESSION['savedate'];
@@ -14,6 +15,19 @@ if(!$con){
 die('not connected');}
 $q="INSERT INTO post". "(username,postdate)". "VALUES('$username','$date')";
 $i=mysqli_query($con,$q);
+$s="select from content where username='$username' && date='$date'";
+$sc=mysqli_query($con,$sc);
+$sf=mysqli_fetch_array($sc);
+$textarea=$sf['textarea'];
+  $fontstyle=$sf['fontstyle'];
+  $fontcolor=$sf['fontcolor'];
+  $text_size=$sf['textarea'];
+  $bgcolor=$sf['bgcolor'];
+  
+$si="INSERT INTO postdata". "(username,textarea,date,fontstyle,fontcolor,text_size,bgcolor)". "VALUES('$username','$textarea','$date','$fontstyle','$fontcolor','$text_size','$bgcolor')";
+$sic=mysqli_query($con,$q);
 }
-header('Location: http://indite.herokuapp.com/index.php');
+echo" <script>
+window.location.replace('index.php?');
+</script>";
 ?>
