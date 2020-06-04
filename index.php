@@ -4,6 +4,7 @@ if(!isset($_SESSION['username']))
 header('Location: http://indite.herokuapp.com/login.php');
 ?>
 <?php
+header("Refresh:  300;url='REDIRECTION URI'");
 $username=$_SESSION['username'];
 $host='sql12.freesqldatabase.com';
 $dbuser='sql12345161';
@@ -185,7 +186,7 @@ for($i=1;$i<=$n;$i++)
   $mn=mysqli_num_rows($mc);
   $com=strcmp($username,$user);
   if($mn==1||$com==0){
-  $c="select * from content where username='$user' && date='$user_date'";
+  $c="select * from postdata where username='$user' && date='$user_date'";
    $d=mysqli_query($con,$c);
   $user_res=mysqli_fetch_array($d);
     ?>
