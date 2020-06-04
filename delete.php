@@ -1,7 +1,7 @@
 <?php
-header("Cache-Control: no cache");
-session_cache_limiter("private_no_expire");
+
 session_start();
+header("Refresh:  300;url='REDIRECTION URI'");
 $post=$_POST['user_delete'];
 if($post){
 $username=$_SESSION['username'];
@@ -15,10 +15,11 @@ $con=mysqli_connect($host,$dbuser,$dbpassword,$dbname);
 if(!$con){
 die('not connected');}
 $q="DELETE FROM content where username='$username'&& date='$date'";
+
 $i=mysqli_query($con,$q);
 }
 mysqli_close($con);
 echo"<script>
-location.replace('https://indite.herokuapp.com/display.php?');
+window.location.replace('display.php?');
 </script>;"
 ?>
