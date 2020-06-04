@@ -14,7 +14,7 @@ if(!$con){
 die('not connected');}
 mysqli_close($con);
 echo "<script>  
-  location.replace('https://indite.herokuapp.com/display.php?');   
+ window.location.replace('display.php?');   
   </script>";
 }
 ?>
