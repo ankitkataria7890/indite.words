@@ -24,6 +24,14 @@ $res=mysqli_fetch_array($t);
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 <title>Gallery</title>
+      <script>
+ var refresh =$window.localStorage.getItem('refresh');
+ console.log(refresh);
+ if(refresh===null){
+  window.location.reload(true);
+  $window.localStorage.setItem('refresh',"1");
+ }
+ </script>
 <style>
 body{
 background:white;}
