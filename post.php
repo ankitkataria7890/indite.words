@@ -29,7 +29,7 @@ $textarea=$sf['textarea'];
 $si="INSERT INTO postdata". "(username,textarea,date,fontstyle,fontcolor,text_size,bgcolor)". "VALUES('$username','$textarea','$date','$fontstyle','$fontcolor','$text_size','$bgcolor')";
 $sic=mysqli_query($con,$q);
 }*/
-$ff= "INSERT INTO postdata SELECT * from content where username='$username'&& date='$date';
+$ff= "INSERT INTO postdata SELECT * from content where username='$username'&& date='$date'";
 $ffc=mysqli_query($con,$ff);
 echo" <script>
 window.location.replace('index.php?');
