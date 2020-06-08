@@ -1,7 +1,7 @@
 <?php
 session_start();
 $post=$_POST['user_post'];
-header("Refresh:  300;url='REDIRECTION URI'");
+header("Refresh:  600;url='REDIRECTION URI'");
 if($post){
 $username=$_SESSION['username'];
 $date=$_SESSION['savedate'];
@@ -13,7 +13,7 @@ $dbname='sql12345161';
 $con=mysqli_connect($host,$dbuser,$dbpassword,$dbname);
 if(!$con){
 die('not connected');}
-$q="INSERT INTO post". "(username,postdate)". "VALUES('$username','$date')";
+/*$q="INSERT INTO post". "(username,postdate)". "VALUES('$username','$date')";
 $i=mysqli_query($con,$q);
 $s="select * from content where username='$username' && date='$date'";
 $sc=mysqli_query($con,$s);
@@ -28,7 +28,9 @@ $textarea=$sf['textarea'];
   
 $si="INSERT INTO postdata". "(username,textarea,date,fontstyle,fontcolor,text_size,bgcolor)". "VALUES('$username','$textarea','$date','$fontstyle','$fontcolor','$text_size','$bgcolor')";
 $sic=mysqli_query($con,$q);
-}
+}*/
+$ff= "INSERT INTO postdata SELECT * from content where username='$username'&& date='$date';
+$ffc=mysqli_query($con,$ff);
 echo" <script>
 window.location.replace('index.php?');
 </script>";
