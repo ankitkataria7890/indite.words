@@ -15,11 +15,10 @@ if(!$con){
 die('not connected');}
 $q="INSERT INTO post". "(username,postdate)". "VALUES('$username','$date')";
 $i=mysqli_query($con,$q);
-$s="select from content where username='$username' && date='$date'";
+$s="select * from content where username='$username' && date='$date'";
 $sc=mysqli_query($con,$s);
 $snc=mysqli_num_rows($sc);
-  if($snc==1){
-    echo 'yes';}
+ 
 $sf=mysqli_fetch_array($sc);
 $textarea=$sf['textarea'];
   $fontstyle=$sf['fontstyle'];
