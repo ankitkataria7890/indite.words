@@ -6,11 +6,7 @@ header('Location: http://indite.herokuapp.com/login.php');
 <?php
 header("Refresh:  300;url='REDIRECTION URI'");
 $username=$_SESSION['username'];
-$host='sql12.freesqldatabase.com';
-$dbuser='sql12345161';
-$dbpassword='3dqYuAVkkt';
-$dbname='sql12345161';
-$con=mysqli_connect($host,$dbuser,$dbpassword,$dbname);
+include 'database.php';
 if(!$con){
 die('not connected');}
 $s="select * from post ORDER BY id desc";
@@ -28,9 +24,10 @@ $fgn=mysqli_num_rows($fgc);
 $follower=$fgn;
 $following=$fn;
 
-$p="select * from post where username='$username'";
+/*$p="select * from post where username='$username'";
 $pc=mysqli_query($con,$p);
 $pn=mysqli_num_rows($pc);
+*/
 $sf="select * from registration";
 $sfc=mysqli_query($con,$sf);
 $sfn=mysqli_num_rows($sfc);
@@ -185,17 +182,17 @@ function footer(){
 <div class="grid-container">
 <?php 
 for($i=1;$i<=$n;$i++)
-{$res=mysqli_fetch_array($t);
-  $user=$res['username'];
-  $user_date=$res['postdate'];
+{$user_res=mysqli_fetch_array($t);
+  $user=$user_res['username'];
+  $user_date=$user_res['date'];
   $m="select * from following where username='$username' && followingname='$user'";
   $mc=mysqli_query($con,$m);
   $mn=mysqli_num_rows($mc);
   $com=strcmp($username,$user);
   if($mn==1||$com==0){
-  $c="select * from postdata where username='$user' && date='$user_date'";
+ /* $c="select * from postdata where username='$user' && date='$user_date'";
    $d=mysqli_query($con,$c);
-  $user_res=mysqli_fetch_array($d);
+  $user_res=mysqli_fetch_array($d); */
     ?>
 <div class="grid" id ="outside">
 <div style="padding-bottom:10px;">
