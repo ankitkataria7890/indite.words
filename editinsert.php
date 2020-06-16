@@ -26,5 +26,5 @@ $rc=mysqli_query($con,$r);
 
 
 mysqli_close($con);
-header('Location: http://indite.herokuapp.com/editaccount.php');
+header('Location: http://indite.herokuapp.com/account.php');
 ?>
