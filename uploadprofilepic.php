@@ -6,7 +6,7 @@ if (isset($_POST['upload'])) {
     $msg="";
 	$filename = $_FILES["uploadfile"]["name"]; 
 	$tempname = $_FILES["uploadfile"]["tmp_name"];	 
-		$folder = "indite.herokuapp.com/image/".$filename; 
+		$folder = "image/".$filename; 
 		
 	$username=$_SESSION['username'];
 $host='sql12.freesqldatabase.com';
