@@ -9,11 +9,7 @@ $fc=$_POST['fontcolor'];
 $bc=$_POST['bgcolor'];
 if($save){
 $textarea=$_POST['text'];
-$host='sql12.freesqldatabase.com';
-$dbuser='sql12345161';
-$dbpassword='3dqYuAVkkt';
-$dbname='sql12345161';
-$con=mysqli_connect($host,$dbuser,$dbpassword,$dbname);
+  include 'database.php';
   if(!$con){
 die('not connected');
 }
