@@ -7,12 +7,7 @@ header('Location: http://indite.herokuapp.com/login.php');
 <?php
 
 $username=$_SESSION['username'];
-$host='sql12.freesqldatabase.com';
-$dbuser='sql12345161';
-$dbpassword='3dqYuAVkkt';
-$dbname='sql12345161';
-$con=mysqli_connect($host,$dbuser,$dbpassword,$dbname);
-
+include 'database.php';
 if(!$con){
 die('not connected');}
 
@@ -166,11 +161,11 @@ height:100%;
   <?php
   for($i=1;$i<=$pn;$i++)
     {
-$pf=mysqli_fetch_array($pc);
-$date=$pf['postdate'];
+$res=mysqli_fetch_array($pc);
+/*$date=$pf['date'];
 $s="select * from content where username='$username'&& date='$date'";
 $t=mysqli_query($con,$s);
-$res=mysqli_fetch_array($t);
+$res=mysqli_fetch_array($t);*/
      $date=$res['date'];
     $text=$res['textarea'];
     $color=$res['fontcolor'];
