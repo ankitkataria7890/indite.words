@@ -59,9 +59,11 @@ font-size:20px;
 text-decoration:none;
 color:rgba(0,0,0,0.5);
 margin-right:10px;
+ cursor:pointer;
 }
 .edit:hover{
-color:rgba(0,225,0,0.5);}
+color:rgba(0,225,0,0.5);
+ cursor:pointer;}
 
 #desc{
 
