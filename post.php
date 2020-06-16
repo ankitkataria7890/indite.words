@@ -5,12 +5,7 @@ header("Refresh:  600;url='REDIRECTION URI'");
 if($post){
 $username=$_SESSION['username'];
 $date=$_SESSION['savedate'];
-$username=$_SESSION['username'];
-$host='sql12.freesqldatabase.com';
-$dbuser='sql12345161';
-$dbpassword='3dqYuAVkkt';
-$dbname='sql12345161';
-$con=mysqli_connect($host,$dbuser,$dbpassword,$dbname);
+include 'database.php';
 if(!$con){
 die('not connected');}
 /*$q="INSERT INTO post". "(username,postdate)". "VALUES('$username','$date')";
@@ -29,9 +24,10 @@ $textarea=$sf['textarea'];
 $si="INSERT INTO postdata". "(username,textarea,date,fontstyle,fontcolor,text_size,bgcolor)". "VALUES('$username','$textarea','$date','$fontstyle','$fontcolor','$text_size','$bgcolor')";
 $sic=mysqli_query($con,$q);
 }*/
-$ff= "INSERT INTO postdata SELECT * from content where username='$username'&& date='$date'";
+$ff= "INSERT INTO post(username,date,textarea,fontstyle,fontcolor,text_size,bgcolor) SELECT username,date,textarea,fontstyle,fontcolor,text_size,bgcolor FROM content WHERE username='$username'&& date='$date'";
 $ffc=mysqli_query($con,$ff);
 echo" <script>
 window.location.replace('index.php?');
 </script>";
+ mysqli_close($con);
 ?>
