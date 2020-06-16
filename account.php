@@ -127,7 +127,13 @@ height:100%;
 </style>
 </head>
 <body>
-<span class="edit"><a href="editaccount.php"> &nbsp;&nbsp;Edit</a></span><br>
+ <?php  
+ echo"<script>
+ function rep(){
+ window.location.replace('editaccount.php');}
+ </script>;"
+  ?>
+<span class="edit" onclick="rep();"> &nbsp;&nbsp;Edit</a></span><br>
 
 <div id="header"><center>
 <span style="font-size:40px;float:left;margin-left:40px;color:rgba(0,0,0,1);font-family: 'arial', serif;"><b><?php echo $username;?></b></span><span style="float:right;margin:30px 0 0px 40px;"></span>
