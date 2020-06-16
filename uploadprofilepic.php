@@ -9,11 +9,7 @@ if (isset($_POST['upload'])) {
 		$folder = "image/".$filename; 
 		
 	$username=$_SESSION['username'];
-$host='sql12.freesqldatabase.com';
-$dbuser='sql12345161';
-$dbpassword='3dqYuAVkkt';
-$dbname='sql12345161';
-$con=mysqli_connect($host,$dbuser,$dbpassword,$dbname);
+include 'database.php';
                  $d = "delete from image where username='$username'"; 
          $dl=mysqli_query($con,$d);
 		// Get all the submitted data from the form 
