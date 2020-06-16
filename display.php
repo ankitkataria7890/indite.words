@@ -11,11 +11,7 @@ while($i<1){
      </script>";
  $i++;
 }*/
-$host='sql12.freesqldatabase.com';
-$dbuser='sql12345161';
-$dbpassword='3dqYuAVkkt';
-$dbname='sql12345161';
-$con=mysqli_connect($host,$dbuser,$dbpassword,$dbname);
+include 'database.php';
 if(!$con){
 die('not connected');}
 $s="select * from content where username='$username'";
