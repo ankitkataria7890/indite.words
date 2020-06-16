@@ -9,7 +9,7 @@ include 'database.php';
 if(!$con){
 die('not connected');}
 /*$q="INSERT INTO post". "(username,postdate)". "VALUES('$username','$date')";
-$i=mysqli_query($con,$q);
+$i=mysqli_query($con,$q);*/
 $s="select * from content where username='$username' && date='$date'";
 $sc=mysqli_query($con,$s);
 $snc=mysqli_num_rows($sc);
@@ -21,11 +21,11 @@ $textarea=$sf['textarea'];
   $text_size=$sf['text_size'];
   $bgcolor=$sf['bgcolor'];
   
-$si="INSERT INTO postdata". "(username,textarea,date,fontstyle,fontcolor,text_size,bgcolor)". "VALUES('$username','$textarea','$date','$fontstyle','$fontcolor','$text_size','$bgcolor')";
+$si="INSERT INTO post". "(username,textarea,date,fontstyle,fontcolor,text_size,bgcolor)". "VALUES('$username','$textarea','$date','$fontstyle','$fontcolor','$text_size','$bgcolor')";
 $sic=mysqli_query($con,$q);
-}*/
-$ff= "INSERT INTO post(username,date,textarea,fontstyle,fontcolor,text_size,bgcolor) SELECT username,date,textarea,fontstyle,fontcolor,text_size,bgcolor FROM content WHERE username='$username'&& date='$date'";
-$ffc=mysqli_query($con,$ff);
+}
+/*$ff= "INSERT INTO post(username,date,textarea,fontstyle,fontcolor,text_size,bgcolor) SELECT username,date,textarea,fontstyle,fontcolor,text_size,bgcolor FROM content WHERE username='$username'&& date='$date'";
+$ffc=mysqli_query($con,$ff);*/
 echo" <script>
 window.location.replace('index.php?');
 </script>";
