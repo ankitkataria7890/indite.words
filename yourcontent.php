@@ -5,11 +5,8 @@ header("Refresh:  300;url='REDIRECTION URI'");
 $username=$_SESSION['username'];
 $date=$_POST['content'];
 $_SESSION['savedate']=$date;
-$host='sql12.freesqldatabase.com';
-$dbuser='sql12345161';
-$dbpassword='3dqYuAVkkt';
-$dbname='sql12345161';
-$con=mysqli_connect($host,$dbuser,$dbpassword,$dbname);
+
+include 'database.php';
 
 if(!$con){
 die('not connected');}
