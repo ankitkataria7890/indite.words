@@ -5,12 +5,7 @@
 <?php
 session_start();
 $username=$_SESSION['username'];
-$username=$_SESSION['username'];
-$host='sql12.freesqldatabase.com';
-$dbuser='sql12345161';
-$dbpassword='3dqYuAVkkt';
-$dbname='sql12345161';
-$con=mysqli_connect($host,$dbuser,$dbpassword,$dbname);
+include 'database.php';
 if(!$con){
 die('not connected');}
 
@@ -159,19 +154,15 @@ if (isset($_POST['upload'])) {
 	$tempname = $_FILES["uploadfile"]["tmp_name"];	 
 		$folder = "image/".$filename; 
 	$username=$_SESSION['username'];
-$host='sql12.freesqldatabase.com';
-$dbuser='sql12345161';
-$dbpassword='3dqYuAVkkt';
-$dbname='sql12345161';
-$db=mysqli_connect($host,$dbuser,$dbpassword,$dbname);	
+include 'database.php';
 	
         $d = "delete from image where username='$username'"; 
-         $dl=mysqli_query($db,$d);
+         $dl=mysqli_query($con,$d);
 		// Get all the submitted data from the form 
 		$sql = "INSERT INTO image (username,filename) VALUES ('$username','$filename')"; 
 
 		// Execute query 
-		mysqli_query($db, $sql); 
+		mysqli_query($con, $sql); 
 		
 		// Now let's move the uploaded image into the folder: image 
 		if (move_uploaded_file($tempname, $folder)) { 
@@ -183,6 +174,7 @@ $db=mysqli_connect($host,$dbuser,$dbpassword,$dbname);
 	} 
  
 } 
-$result = mysqli_query($db, "SELECT * FROM image"); 
+$result = mysqli_query($con, "SELECT * FROM image"); 
+mysqli_close($con);
 
 ?> 
