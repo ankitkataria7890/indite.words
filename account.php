@@ -52,7 +52,7 @@ $gender=$ef['gender'];
 
 <title><?php echo ucfirst($username);?></title>
 <style>
-.edit a{
+.edit {
 float:right;
 font-weight:100;
 font-size:20px;
@@ -60,7 +60,7 @@ text-decoration:none;
 color:rgba(0,0,0,0.5);
 margin-right:10px;
 }
-.edit a:hover{
+.edit:hover{
 color:rgba(0,225,0,0.5);}
 
 #desc{
@@ -133,7 +133,7 @@ height:100%;
  window.location.replace('editaccount.php');}
  </script>;"
   ?>
-<span class="edit" onclick="rep();"> &nbsp;&nbsp;Edit</a></span><br>
+<span class="edit" onclick="rep();"> &nbsp;&nbsp;Edit</span><br>
 
 <div id="header"><center>
 <span style="font-size:40px;float:left;margin-left:40px;color:rgba(0,0,0,1);font-family: 'arial', serif;"><b><?php echo $username;?></b></span><span style="float:right;margin:30px 0 0px 40px;"></span>
