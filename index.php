@@ -182,17 +182,17 @@ function footer(){
 <div class="grid-container">
 <?php 
 for($i=1;$i<=$n;$i++)
-{$user_res=mysqli_fetch_array($t);
-  $user=$user_res['username'];
-  $user_date=$user_res['date'];
+{$res=mysqli_fetch_array($t);
+  $user=$res['username'];
+  $user_date=$res['date'];
   $m="select * from following where username='$username' && followingname='$user'";
   $mc=mysqli_query($con,$m);
   $mn=mysqli_num_rows($mc);
   $com=strcmp($username,$user);
   if($mn==1||$com==0){
- /* $c="select * from postdata where username='$user' && date='$user_date'";
+ $c="select * from postdata where username='$user' && date='$user_date'";
    $d=mysqli_query($con,$c);
-  $user_res=mysqli_fetch_array($d); */
+  $user_res=mysqli_fetch_array($d); 
     ?>
 <div class="grid" id ="outside">
 <div style="padding-bottom:10px;">
