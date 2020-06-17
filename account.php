@@ -133,7 +133,7 @@ height:100%;
  echo"<script>
  function rep(){
  window.location.replace('editaccount.php');}
- </script>;"
+ </script>"
   ?>
 <span class="edit" onclick="rep();"> &nbsp;&nbsp;Edit</span><br>
 
