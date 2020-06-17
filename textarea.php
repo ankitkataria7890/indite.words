@@ -19,6 +19,8 @@ $num=mysqli_num_rows($h);
     if($num==1){
 $q="INSERT INTO content". "(textarea,username,date,fontstyle,text_size,fontcolor,bgcolor)". "VALUES('$textarea','$username',NOW(),'$fs','$ts','$fc','$bc')";
 $i=mysqli_query($con,$q);
+      $pq="INSERT INTO postdata". "(textarea,username,date,fontstyle,text_size,fontcolor,bgcolor)". "VALUES('$textarea','$username',NOW(),'$fs','$ts','$fc','$bc')";
+$pi=mysqli_query($con,$pq);
 echo"<script>
 location.replace('https://indite.herokuapp.com/write.php?');
 </script>";}
