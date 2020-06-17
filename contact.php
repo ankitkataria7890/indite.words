@@ -10,7 +10,7 @@ body{background-color:rgba(0,0,225,0.6);
 center{
 color:white;
 margin:auto;
-margin-top:25%;}
+margin-top:15%;}
 .material-icons{
 font-size:36px;
 }
@@ -19,13 +19,13 @@ font-size:36px;
 </head>
 <body>
 <center>
-<h2>Coming Soon...</h2><br><br>
-Till You Can Follow us ON
-<br>
-<a href="#"><i class="material-icons" >instagram</i></a>&nbsp;&nbsp;
-<a href="#"><i class="material-icons" >facebook</i></a>&nbsp;&nbsp;
-<a href="#"><i class="material-icons" >linkden</i></a>&nbsp;&nbsp;
-<a href="#"><i class="material-icons" >twitter</i></a>&nbsp;&nbsp;
+<h1>Coming Soon...</h1>
+<h6>Till You Can Follow us ON</h6>
+
+<a href="#"><dfn title="facebook"><img src="https://img.icons8.com/bubbles/50/000000/facebook-new.png"/></dfn></a>&nbsp;&nbsp;
+<a href="#"><dfn title="instagram"><img src="https://img.icons8.com/bubbles/48/000000/instagram-new.png"/></dfn></a>&nbsp;&nbsp;
+<a href="#"><dfn title="linkden"><img src="https://img.icons8.com/bubbles/48/000000/linkedin.png"/></dfn></a>&nbsp;&nbsp;
+<a href="#"><dfn title="twitter"><img src="https://img.icons8.com/bubbles/48/000000/twitter.png"/></dfn></a>&nbsp;&nbsp;
 </center>
 </body>
 <html>
