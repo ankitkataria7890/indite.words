@@ -78,7 +78,7 @@ if(atindex<1||dotindex>= e.length-2||dotindex-atindex<3)
 <body>
 <center>
 <br><br> 
-<img src="<?php echo 'indite.words/image/'.$row['filename'];?>" alt="uploading.." style="align:center" class="avatar">
+<img src="<?php echo '../image/'.$row['filename'];?>" alt="uploading.." style="align:center" class="avatar">
 <div id="header">
  <label for="image"><b>&nbsp;Change Profile Photo</b></label>
  <form method="POST" action="uploadprofilepic.php" enctype="multipart/form-data" > 
