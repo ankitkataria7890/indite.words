@@ -23,5 +23,5 @@ echo "
 alert('sent successfully'); 
 window.location.replace('index.php');
 </script>";
-}
+
 ?>
