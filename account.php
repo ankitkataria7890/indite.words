@@ -169,11 +169,11 @@ height:100%;
   <?php
   for($i=1;$i<=$pn;$i++)
     {
-$res=mysqli_fetch_array($pc);
-/*$date=$pf['date'];
-$s="select * from content where username='$username'&& date='$date'";
+$pf=mysqli_fetch_array($pc);
+$date=$pf['date'];
+$s="select * from postdata where username='$username'&& date='$date'";
 $t=mysqli_query($con,$s);
-$res=mysqli_fetch_array($t);*/
+$res=mysqli_fetch_array($t);
      $date=$res['date'];
     $text=$res['textarea'];
     $color=$res['fontcolor'];
