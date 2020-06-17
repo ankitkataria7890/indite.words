@@ -6,7 +6,7 @@ if (isset($_POST['upload'])) {
     $msg="";
 	$filename = $_FILES["uploadfile"]["name"]; 
 	$tempname = $_FILES["uploadfile"]["tmp_name"];	 
-		$folder = "indite.words/image/".$filename; 
+		$folder = "../image/".$filename; 
 		
 	$username=$_SESSION['username'];
 include 'database.php';
