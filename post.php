@@ -1,14 +1,14 @@
 <?php
 session_start();
 $post=$_POST['user_post'];
-header("Refresh:  600;url='REDIRECTION URI'");
+header("Refresh:600;url='REDIRECTION URI'");
 if($post){
 $username=$_SESSION['username'];
 $date=$_SESSION['savedate'];
 include 'database.php';
 if(!$con){
 die('not connected');}
-$q="INSERT INTO post". "(username,postdate)". "VALUES('$username','$date')";
+$q="INSERT INTO post". "(username,date)". "VALUES('$username','$date')";
 $i=mysqli_query($con,$q);
 /*$s="select * from postdata where username='$username' && date='$date'";
 $sc=mysqli_query($con,$s);
