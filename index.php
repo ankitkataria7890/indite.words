@@ -24,10 +24,10 @@ $fgn=mysqli_num_rows($fgc);
 $follower=$fgn;
 $following=$fn;
 
-/*$p="select * from post where username='$username'";
+$p="select * from post where username='$username'";
 $pc=mysqli_query($con,$p);
 $pn=mysqli_num_rows($pc);
-*/
+
 $sf="select * from registration";
 $sfc=mysqli_query($con,$sf);
 $sfn=mysqli_num_rows($sfc);
