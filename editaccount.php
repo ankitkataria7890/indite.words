@@ -81,7 +81,7 @@ if(atindex<1||dotindex>= e.length-2||dotindex-atindex<3)
 <img src="<?php echo 'indite.words/image/'.$row['filename'];?>" alt="uploading.." style="align:center" class="avatar">
 <div id="header">
  <label for="image"><b>&nbsp;Change Profile Photo</b></label>
- <form method="POST"  enctype="multipart/form-data" > 
+ <form method="POST" action="uploadprofilepic.php" enctype="multipart/form-data" > 
 <input type="file" name="uploadfile" accept="image/*" value="" required> 
 
 			<div> 
@@ -142,7 +142,7 @@ if(atindex<1||dotindex>= e.length-2||dotindex-atindex<3)
 
    </body></html>
 <?php 
-error_reporting(0); 
+/*error_reporting(0); 
 ?> 
 <?php 
 $msg = ""; 
@@ -152,7 +152,7 @@ if (isset($_POST['upload'])) {
 
 	$filename = $_FILES["uploadfile"]["name"]; 
 	$tempname = $_FILES["uploadfile"]["tmp_name"];	 
-		$folder = "image/".$filename; 
+		$folder = "indite.words/image/".$filename; 
 	$username=$_SESSION['username'];
 include 'database.php';
 	
@@ -175,6 +175,6 @@ include 'database.php';
  
 } 
 $result = mysqli_query($con, "SELECT * FROM image"); 
-mysqli_close($con);
+mysqli_close($con);*/
 
 ?> 
