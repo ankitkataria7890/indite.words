@@ -10,6 +10,8 @@ if(!$con){
 die('not connected');}
 $q="INSERT INTO post". "(username,date)". "VALUES('$username','$date')";
 $i=mysqli_query($con,$q);
+mysqli_close($con);
+}
 /*$s="select * from postdata where username='$username' && date='$date'";
 $sc=mysqli_query($con,$s);
 $snc=mysqli_num_rows($sc);
@@ -26,8 +28,9 @@ $sic=mysqli_query($con,$q);
 }
 $ff= "INSERT INTO post(username,date,textarea,fontstyle,fontcolor,text_size,bgcolor) SELECT username,date,textarea,fontstyle,fontcolor,text_size,bgcolor FROM content WHERE username='$username'&& date='$date'";
 $ffc=mysqli_query($con,$ff);*/
+
 echo" <script>
 window.location.replace('index.php?');
 </script>";
- mysqli_close($con);
+
 ?>
