@@ -1,5 +1,6 @@
 <?php
-
+session_start();
+$username=$_SESSION['username'];
 
 // If upload button is clicked ... 
 if (isset($_POST['upload'])) { 
@@ -8,8 +9,9 @@ if (isset($_POST['upload'])) {
 	$tempname = $_FILES["uploadfile"]["tmp_name"];	 
 		$folder = "image/".$filename; 
 		echo "$filename";
+	echo"<br>";
 	       echo "$tempname";
-	$username=$_SESSION['username'];
+	
 include 'database.php';
                  $d = "delete from image where username='$username'"; 
          $dl=mysqli_query($con,$d);
@@ -27,7 +29,7 @@ include 'database.php';
 	} 
     
 }  echo "<script>
-             alert('<?php echo $msg;?>'); 
+             alert( $msg;); 
               
      </script>";
 
