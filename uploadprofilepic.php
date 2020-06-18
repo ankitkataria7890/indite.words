@@ -8,9 +8,7 @@ if (isset($_POST['upload'])) {
 	$filename = $_FILES["uploadfile"]["name"]; 
 	$tempname = $_FILES["uploadfile"]["tmp_name"];	 
 		$folder = "image/".$filename; 
-		echo "$filename";
-	echo"<br>";
-	       echo "$tempname";
+		
 	
 include 'database.php';
                  $d = "delete from image where username='$username'"; 
