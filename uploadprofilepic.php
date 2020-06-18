@@ -27,7 +27,7 @@ include 'database.php';
 	} 
     
 }  echo "<script>
-             alert( $msg); 
+             alert('$msg'); 
               window.location.replace('editaccount.php');
      </script>";
 mysqli_close('$con');
