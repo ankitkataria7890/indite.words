@@ -114,19 +114,20 @@ padding:10px 40px 30px 40px;
   height: 50px;
   border-radius: 50%;
 }
-
+ .footer{display:none;}
 
 </style>
 <script>
 function footer(){
-  document.getElementById("foo").style.display;
+  var x=document.getElementsByClassName("footer");
+ x.style.display="block";
 }
 </script>
 </head>
 <body>
 <p id="header" style="font-family: 'Black And White Picture', sans serif;"> <b>Let's THROW</b>
   <span style="float:right;margin-bottom:0px;margin-top:70px;margin-right:30px;"><button style="border:0px solid  white;font-size:15px; border-radius:2px;padding:5px;color:white;background:rgba(198,204,212,0.3);cursor:pointer;"
- onclick="footer()"><h6>Bottom</h6></button></span></p>
+ onclick="footer();"><h6>Bottom</h6></button></span></p>
 <div  style="height:80px;">
 <ul class="index" style="width:100%">
 <li onclick="backhome();" ><a class="active" >Home</a></li>
@@ -216,18 +217,17 @@ for($i=1;$i<=$n;$i++)
 
 
 </div>
-<div class="footer" id="foo" >
+<div class="footer" onclick="footer();">
 <ul style="list-style:none">
-<li> <a href="aboutus.php">About Us</a></li>
-<li> <a href="faq.php">FAQs</a></li>
-<li> <a href="blog.php">Blog</a></li>
-<li style="float:right"> <a href="#">Contact</a></li>
+<li> <a href="#">About Us</a></li>
+<li> <a href="#">FAQs</a></li>
+<li> <a href="#">Blog</a></li>
+<li style="float:right"> <a href="contact.php">Contact</a></li>
 <li style="float:right"> <a href="suggestion.php">Suggestion</a></li>
 </ul>
-<br><br>
+<br>
 <p style="text-align:center; font-size:10px;">Disclaimer: Legal information is not legal advice , <a href="disclaimer.php"style="color:rgb(153, 204, 255)">Read the disclaimer.</a></p>
-<br><p style="text-align:center; font-size:12px; color:rgba(225,225,225,0.8);"> Copyright c 2020 QTS XYZ, Inc. All rights reserverd. <a href="termsofuse.php" style="color:rgb(153, 204, 255)"> Terms of Use </a>|<a href="privacypolicy.php" style="color:rgb(153, 204, 255)"> Privacy Policy - REVISED</a></p>
-
+<p style="text-align:center; font-size:12px; color:rgba(225,225,225,0.8);"> Copyright c 2020 QTS XYZ, Inc. All rights reserverd. <a href="termsofuse.php" style="color:rgb(153, 204, 255)"> Terms of Use </a>|<a href="privacypolicy.php" style="color:rgb(153, 204, 255)"> Privacy Policy - REVISED</a></p>
 </div>
 <script>
 window.onscroll = function() {index(),left()};
