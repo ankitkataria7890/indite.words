@@ -17,7 +17,7 @@ include 'database.php';
 		$sql = "INSERT INTO image (username,filename) VALUES ('$username','$filename')"; 
 
 		// Execute query 
-		mysqli_query($con, $sql); 
+		
 		
 		// Now let's move the uploaded image into the folder: image 
 		if (move_uploaded_file($tempname, $folder)) { 
@@ -27,8 +27,8 @@ include 'database.php';
 	} 
     
 }  echo "<script>
-             alert( $msg;); 
-              
+             alert( $msg); 
+              window.location.replace('editaccount.php');
      </script>";
-
+mysqli_close('$con');
 ?>
