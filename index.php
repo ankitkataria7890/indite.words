@@ -114,9 +114,23 @@ padding:10px 40px 30px 40px;
   height: 50px;
   border-radius: 50%;
 }
- .footer{display:none;
+ 
+ .footer{
+  display:none;
  position:fixed;
- bottom:0px;}
+ bottom:0px;
+background-color:rgb(19,43,64);
+float:left;
+padding:15px;
+padding-left:50x;
+height:100px;
+width:100%;}
+.footer li a{
+text-decoration:none;
+padding-right:50px;
+color:rgba(225,225,225,0.5);
+float:left;
+}
 
 </style>
 
