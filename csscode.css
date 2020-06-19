@@ -203,7 +203,7 @@ overflow-y:scroll;
   clear: both;
 }
 
-#footer{
+.footer{
   background-color:rgb(19,43,64);
   float:left;
   padding:30px;
@@ -215,7 +215,7 @@ padding-top:20px;
   position:fixed;
   bottom:0px;
 }
-  #footer li a{
+  .footer li a{
   text-decoration:none;
   padding-right:50px;
   color:rgba(225,225,225,0.5);
