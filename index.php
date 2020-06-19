@@ -137,8 +137,8 @@ float:left;
 </head>
 <body>
 <p id="header" style="font-family: 'Black And White Picture', sans serif;"> <b>Let's THROW</b>
-  <span style="float:right;margin-bottom:0px;margin-top:70px;margin-right:30px;" onclick="footer();"><button style="border:0px solid  white;font-size:15px; border-radius:2px;padding:5px;color:white;background:rgba(198,204,212,0.3);cursor:pointer;"
- onclick="footer();"><h6>Bottom</h6></button></span></p>
+  <span style="float:right;margin-bottom:0px;margin-top:70px;margin-right:30px;"><button style="border:0px solid  white;font-size:15px; border-radius:2px;padding:5px;color:white;background:rgba(198,204,212,0.3);cursor:pointer;"
+ onclick="footer();" ondblclick="footergo();"><h6>Bottom</h6></button></span></p>
 <div  style="height:80px;">
 <ul class="index" style="width:100%">
 <li onclick="backhome();" ><a class="active" >Home</a></li>
@@ -225,7 +225,7 @@ for($i=1;$i<=$n;$i++)
  </div>
 </div>
 </div>
-<p onclick="footer()">hii</p>
+
 <div class="footer" >
 <ul style="list-style:none">
 <li> <a href="#">About Us</a></li>
@@ -279,7 +279,7 @@ function footer(){
 }
 
 function footergo(){
-  document.getElementById("foo").style.display = "none";
+  document.getElementsByClassName("footer")[0].style.display = "none";
 }
 </script>
 
