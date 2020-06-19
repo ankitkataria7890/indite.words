@@ -119,12 +119,7 @@ padding:10px 40px 30px 40px;
  bottom:0px;}
 
 </style>
-<script>
-function footer(){
-  var x=document.getElementsByClassName("footer");
- x.style.display="block";
-}
-</script>
+
 </head>
 <body>
 <p id="header" style="font-family: 'Black And White Picture', sans serif;"> <b>Let's THROW</b>
@@ -215,11 +210,9 @@ for($i=1;$i<=$n;$i++)
     ?>
  </div>
 </div>
-
-
-
 </div>
-<div class="footer" onclick="footer();">
+<p onclick="footer()">hii</p>
+<div class="footer" >
 <ul style="list-style:none">
 <li> <a href="#">About Us</a></li>
 <li> <a href="#">FAQs</a></li>
@@ -266,6 +259,10 @@ function openForm() {
   document.getElementById("close").style.display = "block";
 }
 
+function footer(){
+  var x=document.getElementsByClassName("footer")[0];
+ x.style.display="block";
+}
 
 function footergo(){
   document.getElementById("foo").style.display = "none";
