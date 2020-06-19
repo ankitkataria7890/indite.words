@@ -114,7 +114,9 @@ padding:10px 40px 30px 40px;
   height: 50px;
   border-radius: 50%;
 }
- .footer{display:none;}
+ .footer{display:none;
+ position:fixed;
+ bottom:0px;}
 
 </style>
 <script>
@@ -126,7 +128,7 @@ function footer(){
 </head>
 <body>
 <p id="header" style="font-family: 'Black And White Picture', sans serif;"> <b>Let's THROW</b>
-  <span style="float:right;margin-bottom:0px;margin-top:70px;margin-right:30px;"><button style="border:0px solid  white;font-size:15px; border-radius:2px;padding:5px;color:white;background:rgba(198,204,212,0.3);cursor:pointer;"
+  <span style="float:right;margin-bottom:0px;margin-top:70px;margin-right:30px;" onclick="footer();"><button style="border:0px solid  white;font-size:15px; border-radius:2px;padding:5px;color:white;background:rgba(198,204,212,0.3);cursor:pointer;"
  onclick="footer();"><h6>Bottom</h6></button></span></p>
 <div  style="height:80px;">
 <ul class="index" style="width:100%">
