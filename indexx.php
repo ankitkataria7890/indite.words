@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['username']))
-header('Location: http://indite.herokuapp.com/login.php');
+header('Location: http://indite.herokuapp.com/index.php');
 ?>
 <?php
 header("Refresh:  300;url='REDIRECTION URI'");
